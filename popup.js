@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Load saved emoji name
   chrome.storage.sync.get(['emojiName'], (result) => {
-    emojiInput.value = result.emojiName || DEFAULT_EMOJI;
+    emojiInput.value = result.emojiName || "";
   });
 
   // Save emoji name

@@ -1,6 +1,3 @@
-// Notion Insert Icon - Content Script
-// Inserts custom emoji when Ctrl+I is pressed
-
 let emojiName = "";
 
 // Load saved emoji name from storage
@@ -41,6 +38,7 @@ function insertEmoji() {
   }
 
   // Insert text at cursor position using execCommand for contenteditable
+  // 非推奨だがundo/redo させるためにこっちのほうが有利
   document.execCommand('insertText', false, ':' + emojiName);
 
   // Wait a bit for Notion to show the emoji picker, then press Enter

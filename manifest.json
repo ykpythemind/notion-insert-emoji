@@ -1,6 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Notion Insert Icon",
+  "author": "ykpythemind",
   "version": "1.0.0",
   "description": "Insert custom emoji with Ctrl+I in Notion",
   "permissions": ["storage", "activeTab", "tabs"],

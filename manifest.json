@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Notion Insert Icon",
+  "version": "1.0.0",
+  "description": "Insert custom emoji with Ctrl+I in Notion",
+  "permissions": ["storage", "activeTab", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.notion.so/*", "https://notion.so/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

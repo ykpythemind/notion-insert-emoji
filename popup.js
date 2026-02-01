@@ -32,4 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
       saveButton.click();
     }
   });
+
+  // Remove colons from input
+  emojiInput.addEventListener('input', () => {
+    emojiInput.value = emojiInput.value.replace(/:/g, '');
+  });
 });

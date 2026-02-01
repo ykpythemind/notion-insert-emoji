@@ -10,5 +10,6 @@ This extension allows you to insert custom emoji by pressing Ctrl+i in Notion.
 4. Press Enter
 5. The emoji will be inserted at the cursor position
 
-<video src="./misc/video.mp4" controls width="480">
-</video>
+
+https://github.com/user-attachments/assets/113533e8-f9b7-4953-8875-b809131ccab7
+

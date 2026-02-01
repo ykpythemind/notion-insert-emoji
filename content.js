@@ -33,7 +33,7 @@ function insertEmoji() {
 
   // Check if emoji name is set
   if (!emojiName || emojiName.trim() === '') {
-    showNotification('アイコン名を設定してください（拡張機能のアイコンをクリック）');
+    showNotification('Please set the emoji name (click the extension icon)');
     return;
   }
 

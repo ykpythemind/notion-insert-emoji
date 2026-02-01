@@ -1,5 +1,3 @@
-// Popup script for Notion Insert Icon
-
 document.addEventListener('DOMContentLoaded', () => {
   const emojiInput = document.getElementById('emoji');
   const saveButton = document.getElementById('save');

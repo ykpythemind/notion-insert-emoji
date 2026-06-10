@@ -2,12 +2,12 @@
   "manifest_version": 3,
   "name": "Notion Insert Emoji",
   "author": "ykpythemind",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Insert custom emoji with Ctrl+I in Notion",
   "permissions": ["storage", "activeTab", "tabs"],
   "content_scripts": [
     {
-      "matches": ["https://www.notion.so/*", "https://notion.so/*"],
+      "matches": ["https://app.notion.com/*", "https://www.notion.so/*", "https://notion.so/*"],
       "js": ["content.js"]
     }
   ],

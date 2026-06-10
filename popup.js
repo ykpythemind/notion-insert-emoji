@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const emojiName = emojiInput.value.trim() || "";
     chrome.storage.sync.set({ emojiName }, () => {
       // Send message to all Notion tabs
-      chrome.tabs.query({ url: ['https://www.notion.so/*', 'https://notion.so/*'] }, (tabs) => {
+      chrome.tabs.query({ url: ['https://app.notion.com/*', 'https://www.notion.so/*', 'https://notion.so/*'] }, (tabs) => {
         tabs.forEach((tab) => {
           chrome.tabs.sendMessage(tab.id, { type: 'updateEmoji', emojiName });
         });
